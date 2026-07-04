@@ -10,8 +10,14 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ChatPage language={language} setLanguage={setLanguage} />} />
-        <Route path="/voice-call" element={<VoiceCallPage language={language} />} />
+        <Route
+          path="/"
+          element={<VoiceCallPage language={language} />}
+        />
+        <Route
+          path="/chat"
+          element={<ChatPage language={language} setLanguage={setLanguage} />}
+        />
       </Routes>
     </Router>
   );
